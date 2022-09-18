@@ -1,0 +1,7 @@
+# created by virtualenv automatically
+Lib
+Scripts
+etst.py
+pyvenv.cfg
+__pycache__
+startproducers.bat

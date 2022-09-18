@@ -1,0 +1,70 @@
+{
+
+    "kafkaSetup":{
+        "brokerList": ["localhost:9092", "localhost:9093"]
+
+    },
+    "kafkaStreamSettings":{
+        "maxItemInQueue": 10
+    },
+
+    "DLQSetup": {
+        "brokerList": ["localhost:9100", "localhost:9101"]
+    },
+
+    "dataGeneratorSettings":{
+        "errFrequency":8
+    },
+
+    "producerMetrics": {
+        "producer1":{
+            "id": "p-USA",
+            "targetId": "c-USA",
+            "topics": ["t1-USA"],
+            "name": "Producer USA",
+            "timeSleepDisable": false,
+            "timeInterval": 3
+        },
+        "producer2":{
+            "id": "p-PAK",
+            "targetId": "c-PAK",
+            "topics": [],
+            "name": "Producer Pakistan",
+            "timeSleepDisable": false,
+            "timeInterval": 3
+        },
+        "producer3":{
+            "id": "p-JAP",
+            "targetId": "c-JAP",
+            "topics": [],
+            "name": "Producer Japan",
+            "timeSleepDisable": false,
+            "timeInterval": 3
+        }
+    },
+
+
+    "consumerMetrics": {
+        "consumer1":{
+            "id": "c-USA",
+            "topics": [],
+            "name": "Consumer USA",
+            "timeSleepDisable": false,
+            "timeInterval": 3
+        },
+        "consumer2":{
+            "id": "c-PAK",
+            "topics": [],
+            "name": "Consumer Pakistan",
+            "timeSleepDisable": false,
+            "timeInterval": 3
+        },
+        "consumer3":{
+            "id": "c-JAP",
+            "topics": [],
+            "name": "Consumer Japan",
+            "timeSleepDisable": false,
+            "timeInterval": 3
+        }
+    }
+}
