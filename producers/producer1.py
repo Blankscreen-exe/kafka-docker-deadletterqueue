@@ -14,12 +14,12 @@ sys.path.append(directory.parent.parent)
 from data_gen.data_gen import data_create
 from data_validator import data_validate
 #TODO: import status checker
-#TODO: import function to send to DLQ
+from DeadLetterQueue.dlq_corrupt_producer import produce_to_corrupt_dlq
 
 # reading settings for this producer
 setting = json.loads(open(r"settings.json").read())
 
-# creating a producer object
+# creating a producer object for Kafka Queue
 producer = KafkaProducer(
             bootstrap_servers=setting["kafkaSetup"]["brokerList"][0]
 )
@@ -69,15 +69,15 @@ if __name__ == '__main__':
             logFile.write(sendingInfo)
             print(sendingInfo)
 
-            #TODO: send to DLQ
-
+            #TODO: send to DLQ 
+            produce_to_corrupt_dlq(data)
         else:
             sendingInfo = "sending data to Queue ...\n===== Generating next data packet ====="
             logFile.write(sendingInfo)
             print(sendingInfo)
 
-            #TODO: send to status checker
-
+            #TODO: send to demux producer
+            #TODO: if demux producer return "true" then send data to "no space dlq"
             producer.send(
                 setting["producerMetrics"][producer_serial]["topics"][0],
                 data
