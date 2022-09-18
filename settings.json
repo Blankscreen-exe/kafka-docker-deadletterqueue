@@ -11,6 +11,16 @@
     "DLQSetup": {
         "brokerList": ["localhost:9100", "localhost:9101"]
     },
+    "DLQMetrics":{
+        "corruptDLQ":{
+            "id": "dlq-corrupt",
+            "topics": ["corrupt-data-1"]
+        }
+    },
+
+    "demuxProducer": {
+        "numberOfQueues": 3
+    },
 
     "dataGeneratorSettings":{
         "errFrequency":8
