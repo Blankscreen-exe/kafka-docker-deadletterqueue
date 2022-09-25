@@ -4,7 +4,9 @@ producer_serial = "producer1"
 #essential imports
 from kafka import KafkaProducer
 from time import sleep
-w functions
+import json
+import sys
+from os import path
 directory = path.Path(__file__).abspath()
 sys.path.append(directory.parent.parent)
 from data_gen.data_gen import data_create
