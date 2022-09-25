@@ -1,0 +1,96 @@
+
+        ProducerID: p-USA
+        Message Serial: 0
+        Data Sent >> {'playerErr': 'player name not of STR type', 'countryErr': 'country name not of STR type', 'teamErr': None, 'recievedData': {'_id': '2f9519d8-4807-4125-9ae2-3d7c91c59ce1', 'packetID': 0, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 123, 'team': 'Sedated', 'country': 123, 'individualScore': 8, 'playerStatus': {'isOut': True, 'isPlaying': False}}}
+        sending data to DLQ ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 1
+        Data Sent >> {'playerErr': 'player name not of STR type', 'countryErr': None, 'teamErr': None, 'recievedData': {'_id': '6a084532-2d4e-4d23-ac3c-736d5b05fdd8', 'packetID': 1, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 123, 'team': 'Gandalves', 'country': 'USA', 'individualScore': 11, 'playerStatus': {'isOut': False, 'isPlaying': True}}}
+        sending data to DLQ ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 2
+        Data Sent >> {'playerErr': 'player name not of STR type', 'countryErr': None, 'teamErr': 'team name not of STR type', 'recievedData': {'_id': '3d6e0213-33ac-4765-a320-dd3c6d7d88e3', 'packetID': 2, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 123, 'team': 123, 'country': 'Japan', 'individualScore': 26, 'playerStatus': {'isOut': False, 'isPlaying': False}}}
+        sending data to DLQ ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 3
+        Data Sent >> {'playerErr': 'player name not of STR type', 'countryErr': 'country name not of STR type', 'teamErr': None, 'recievedData': {'_id': '90b0077c-c884-4baf-99fc-c31236e7346d', 'packetID': 3, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 123, 'team': 'D.D.D', 'country': 123, 'individualScore': 16, 'playerStatus': {'isOut': False, 'isPlaying': True}}}
+        sending data to DLQ ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 0
+        Data Sent >> {'playerErr': 'player name not of STR type', 'countryErr': 'country name not of STR type', 'teamErr': None, 'recievedData': {'_id': 'a99795d9-1bb3-4d03-879c-9a3415fed847', 'packetID': 0, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 123, 'team': 'RottyTop', 'country': 123, 'individualScore': 29, 'playerStatus': {'isOut': False, 'isPlaying': False}}}
+        sending data to DLQ ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 1
+        Data Sent >> {'playerErr': None, 'countryErr': 'country name not of STR type', 'teamErr': 'team name not of STR type', 'recievedData': {'_id': '49860b9c-8417-4ee5-87ef-aac047985167', 'packetID': 1, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 'Mcdowell Griffin', 'team': 123, 'country': 123, 'individualScore': 16, 'playerStatus': {'isOut': True, 'isPlaying': False}}}
+        sending data to DLQ ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 2
+        Data Sent >> {'playerErr': 'player name not of STR type', 'countryErr': None, 'teamErr': None, 'recievedData': {'_id': 'c1a1e906-a563-492f-b2ed-5b55bc34e8ac', 'packetID': 2, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 123, 'team': 'Thorfinn', 'country': 'Japan', 'individualScore': 30, 'playerStatus': {'isOut': True, 'isPlaying': False}}}
+        sending data to DLQ ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 3
+        Data Sent >> {'_id': 'daf1e8ca-75ea-4f75-bd27-346d4d48ccb3', 'packetID': 3, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 'Chan Kidd', 'team': 'Cthulhu', 'country': 'USA', 'individualScore': 5, 'playerStatus': {'isOut': False, 'isPlaying': False}}
+        sending data to Queue ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 4
+        Data Sent >> {'playerErr': 'player name not of STR type', 'countryErr': 'country name not of STR type', 'teamErr': None, 'recievedData': {'_id': '20e8d6e3-2516-4939-982b-962ef654eb63', 'packetID': 4, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 123, 'team': 'Gandalves', 'country': 123, 'individualScore': 20, 'playerStatus': {'isOut': True, 'isPlaying': False}}}
+        sending data to DLQ ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 0
+        Data Sent >> {'playerErr': None, 'countryErr': 'country name not of STR type', 'teamErr': 'team name not of STR type', 'recievedData': {'_id': 'adc3c24d-1782-47bf-b921-0acb1aa7651a', 'packetID': 0, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 'Jordan Battle', 'team': 123, 'country': 123, 'individualScore': 9, 'playerStatus': {'isOut': True, 'isPlaying': False}}}
+        sending data to DLQ ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 1
+        Data Sent >> {'playerErr': 'player name not of STR type', 'countryErr': None, 'teamErr': 'team name not of STR type', 'recievedData': {'_id': '94c412b6-ee68-4ac4-90f1-b4e64f3eff28', 'packetID': 1, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 123, 'team': 123, 'country': 'USA', 'individualScore': 14, 'playerStatus': {'isOut': True, 'isPlaying': False}}}
+        sending data to DLQ ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 2
+        Data Sent >> {'playerErr': 'player name not of STR type', 'countryErr': None, 'teamErr': 'team name not of STR type', 'recievedData': {'_id': '4bd86383-8e65-4a1b-bf3c-30644f12b69f', 'packetID': 2, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 123, 'team': 123, 'country': 'Paksitan', 'individualScore': 32, 'playerStatus': {'isOut': False, 'isPlaying': True}}}
+        sending data to DLQ ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 3
+        Data Sent >> {'_id': 'fa1af0dc-0259-4ee8-9902-c25551814020', 'packetID': 3, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 'Angeline Pickett', 'team': 'ShieldKnight', 'country': 'USA', 'individualScore': 30, 'playerStatus': {'isOut': False, 'isPlaying': False}}
+        sending data to Queue ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 4
+        Data Sent >> {'_id': '667150fd-360f-41c3-933e-4109077b30d1', 'packetID': 4, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 'Anthony Rios', 'team': 'Gandalves', 'country': 'Paksitan', 'individualScore': 7, 'playerStatus': {'isOut': False, 'isPlaying': True}}
+        sending data to Queue ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 5
+        Data Sent >> {'_id': '9c95dc25-5950-4da7-a4bd-d38bd418c8e9', 'packetID': 5, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 'Slater Parsons', 'team': 'Sedated', 'country': 'Paksitan', 'individualScore': 15, 'playerStatus': {'isOut': False, 'isPlaying': False}}
+        sending data to Queue ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 6
+        Data Sent >> {'playerErr': None, 'countryErr': 'country name not of STR type', 'teamErr': None, 'recievedData': {'_id': '1fe241b5-49b5-4553-933b-b873f8e627e3', 'packetID': 6, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 'Lynch Evans', 'team': 'RottyTop', 'country': 123, 'individualScore': 5, 'playerStatus': {'isOut': True, 'isPlaying': False}}}
+        sending data to DLQ ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 7
+        Data Sent >> {'playerErr': None, 'countryErr': 'country name not of STR type', 'teamErr': None, 'recievedData': {'_id': '848016df-99ed-4ec9-82ee-1ca7490ea13e', 'packetID': 7, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 'Trujillo Salinas', 'team': 'Cthulhu', 'country': 123, 'individualScore': 29, 'playerStatus': {'isOut': False, 'isPlaying': True}}}
+        sending data to DLQ ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 8
+        Data Sent >> {'playerErr': 'player name not of STR type', 'countryErr': None, 'teamErr': None, 'recievedData': {'_id': 'e31524eb-04d7-4fb2-b4da-0a7a95741c70', 'packetID': 8, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 123, 'team': 'Griffindor', 'country': 'USA', 'individualScore': 19, 'playerStatus': {'isOut': True, 'isPlaying': False}}}
+        sending data to DLQ ...
+===== Generating next data packet =====
+        ProducerID: p-USA
+        Message Serial: 9
+        Data Sent >> {'playerErr': None, 'countryErr': 'country name not of STR type', 'teamErr': 'team name not of STR type', 'recievedData': {'_id': 'e6d247eb-1304-42e1-8fb7-eb832748d224', 'packetID': 9, 'consumerID': 'c-USA', 'producerID': 'p-USA', 'playerName': 'Hewitt Buckner', 'team': 123, 'country': 123, 'individualScore': 32, 'playerStatus': {'isOut': True, 'isPlaying': False}}}
+        sending data to DLQ ...
+===== Generating next data packet =====

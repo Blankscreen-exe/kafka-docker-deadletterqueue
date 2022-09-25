@@ -4,21 +4,25 @@ producer_serial = "producer1"
 #essential imports
 from kafka import KafkaProducer
 from time import sleep
-w functions
+import json
+import path
+import sys
+
+# importing utility functions
 directory = path.Path(__file__).abspath()
 sys.path.append(directory.parent.parent)
 from data_gen.data_gen import data_create
 from data_validator import data_validate
 #TODO: import status checker
-from DeadLetterQueue.dlq_corrupt_producer import produce_to_corrupt_dlq
+# from DeadLetterQueue.dlq_corrupt_producer import produce_to_corrupt_dlq
 
 # reading settings for this producer
 setting = json.loads(open(r"settings.json").read())
 
 # creating a producer object for Kafka Queue
-producer = KafkaProducer(
-            bootstrap_servers=setting["kafkaSetup"]["brokerList"][0]
-)
+# producer = KafkaProducer(
+#             bootstrap_servers=setting["kafkaSetup"]["brokerList"][0]
+# )
 
 # data packet count variable
 count = 0
@@ -66,7 +70,7 @@ if __name__ == '__main__':
             print(sendingInfo)
 
             #TODO: send to DLQ 
-            produce_to_corrupt_dlq(data)
+            # produce_to_corrupt_dlq(data)
         else:
             sendingInfo = "sending data to Queue ...\n===== Generating next data packet ====="
             logFile.write(sendingInfo)
@@ -74,10 +78,10 @@ if __name__ == '__main__':
 
             #TODO: send to demux producer
             #TODO: if demux producer return "true" then send data to "no space dlq"
-            producer.send(
-                setting["producerMetrics"][producer_serial]["topics"][0],
-                data
-                )
+            # producer.send(
+            #     setting["producerMetrics"][producer_serial]["topics"][0],
+            #     data
+            #     )
 
         # wait for certain time period
         if not setting["producerMetrics"][producer_serial]["timeSleepDisable"]:

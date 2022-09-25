@@ -23,7 +23,7 @@
     },
 
     "dataGeneratorSettings":{
-        "errFrequency":8
+        "errFrequency": 8
     },
 
     "producerMetrics": {
@@ -52,26 +52,35 @@
             "timeInterval": 3
         }
     },
-
+    
 
     "consumerMetrics": {
         "consumer1":{
             "id": "c-USA",
-            "topics": [],
+            "bootstrapServers": "localhost:9092",
+            "topicPartition": 0,
+            "topics": ["t1-USA"],
+            "groupID": "group1",
             "name": "Consumer USA",
             "timeSleepDisable": false,
-            "timeInterval": 3
+            "timeInterval": 2
         },
         "consumer2":{
             "id": "c-PAK",
+            "bootstrapServers": "localhost:9092",
+            "topicPartition": 0,
             "topics": [],
+            "groupID": "group1",
             "name": "Consumer Pakistan",
             "timeSleepDisable": false,
             "timeInterval": 3
         },
         "consumer3":{
             "id": "c-JAP",
+            "bootstrapServers": "localhost:9092",
+            "topicPartition": 0,
             "topics": [],
+            "groupID": "group1",
             "name": "Consumer Japan",
             "timeSleepDisable": false,
             "timeInterval": 3
